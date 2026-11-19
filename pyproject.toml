@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ollama-cost"
+version = "1.0.0"
+description = "Koszt i saldo Ollama Cloud z /api/usage i /api/balance"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Sebastian Woldański" }]
+keywords = ["ollama", "cost", "usage", "credits", "cli"]
+classifiers = [
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Topic :: System :: Monitoring",
+]
+dependencies = []
+
+[project.scripts]
+ollama-cost = "ollama_cost:main"
+
+[project.urls]
+Homepage = "https://github.com/swoldanski/ollama-cost"
+
+[tool.setuptools]
+py-modules = ["ollama_cost"]
